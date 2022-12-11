@@ -15,10 +15,10 @@ int[,] numbers =  {
                        {8,4,2,4},
                        };
 
-int rows = numbers.GetUpperBound(0) + 1;    // количество строк
-int columns = numbers.Length / rows;        // количество столбцов
-                                            // или так
-                                            // int columns = numbers.GetUpperBound(1) + 1;
+int rows = numbers.GetUpperBound(0) + 1;
+int columns = numbers.Length / rows;
+
+
 
 for (int i = 0; i < rows; i++)
 {
