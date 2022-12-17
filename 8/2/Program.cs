@@ -44,7 +44,7 @@ int minSum(int[,] arr)
 }
 
 
-void printArray(int[,] array)
+void printArray(int[,] arr)
 {
 
     for (int i = 0; i < arr.GetLength(0); i++)
