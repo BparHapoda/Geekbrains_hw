@@ -19,7 +19,7 @@ int inputNumber(String str)
 
 void numbers(int m, int n)
 {
-    if (m == n)
+    if (m > n)
     {
 
         return;
