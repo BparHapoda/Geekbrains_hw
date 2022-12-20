@@ -4,7 +4,7 @@
 //m = 3, n = 2 -> A(m,n) = 29
 int m = inputNumber("m");
 int n = inputNumber("n");
-Console.WriteLine ("m = "+ m+", n = "+n+ " -> A(m,n) = "+ackerman(m,n));
+Console.WriteLine("m = " + m + ", n = " + n + " -> A(m,n) = " + ackerman(m, n));
 
 
 int inputNumber(String str)
@@ -15,13 +15,16 @@ int inputNumber(String str)
     return n;
 }
 
-int ackerman (int m,int n){
-    if (m==0){return n+1;}
-    if (m > 0 && n == 0){
-return ackerman(m-1, 1);
+int ackerman(int m, int n)
+{
+    if (m == 0) { return n + 1; }
+    if (m > 0 && n == 0)
+    {
+        return ackerman(m - 1, 1);
     }
-     if (m > 0 && n > 0) {
-    return ackerman(m-1, ackerman(m, n-1));
-  }
-  return 0;
+    if (m > 0 && n > 0)
+    {
+        return ackerman(m - 1, ackerman(m, n - 1));
+    }
+    return 0;
 }
